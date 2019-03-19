@@ -5,7 +5,12 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "precommit": "yarn eslint --fix && git add ."
+    "prettier": "eslint . --fix",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage",
+    "precommit": "yarn run prettier && yarn run flow status && git add ."
   },
   "dependencies": {
     "react": "16.8.3",
@@ -23,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "flow-bin": "0.92.0",
     "husky": "^1.3.1",
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
