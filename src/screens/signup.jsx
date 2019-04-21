@@ -2,17 +2,19 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Login = () => {
+const Signup = () => {
   return (
-    <View style={{ backgroundColor: 'pink', flex: 1 }}>
-      <Text>Login</Text>
+    <View style={{ backgroundColor: 'red', flex: 1 }}>
+      {console.log('inside render of signuo')}
+      <Text>Signup</Text>
     </View>
   );
 };
 
-// Login.navigationOptions = () => ({
+// Signup.navigationOptions = () => ({
 //   tabBarOnPress: ({ navigation }) => {
 //     navigation.navigate(navigation.state.routeName);
 //   },
 // });
-export default Login;
+
+export default Signup;

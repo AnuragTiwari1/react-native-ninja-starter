@@ -13,10 +13,14 @@
     "precommit": "yarn run prettier && yarn run flow status && git add ."
   },
   "dependencies": {
+    "metro-config": "^0.53.1",
+    "native-base": "^2.12.1",
     "react": "16.8.3",
     "react-native": "0.59.1",
-    "react-navigation": "2.4.1",
-    "react-navigation-redux-helpers": "2.0.9",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-svg": "^9.3.7",
+    "react-native-svg-uri": "^1.2.3",
+    "react-navigation": "^3.6.0",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
@@ -38,9 +42,15 @@
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
     "prettier": "^1.16.4",
+    "react-native-svg-transformer": "^0.12.1",
     "react-test-renderer": "16.8.3"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
   }
 }
